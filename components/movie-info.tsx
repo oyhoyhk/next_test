@@ -1,6 +1,6 @@
-import { API_URL } from "../app/(home)/page";
 import Movie from "./movie";
 import styles from "../styles/movie-info.module.css";
+import { API_URL } from "../app/constants";
 
 export async function getMovie(id: string) {
   console.time("movie");
