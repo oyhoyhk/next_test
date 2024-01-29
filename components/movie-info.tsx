@@ -1,10 +1,10 @@
-import { URL } from "../app/(home)/page";
+import { API_URL } from "../app/(home)/page";
 import Movie from "./movie";
 import styles from "../styles/movie-info.module.css";
 
 export async function getMovie(id: string) {
   console.time("movie");
-  const response = await fetch(URL + "/" + id);
+  const response = await fetch(API_URL + "/" + id);
   console.timeEnd("movie");
   return response.json();
 }
